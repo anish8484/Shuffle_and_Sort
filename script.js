@@ -52,9 +52,9 @@
         addChild(elementsArr);
     }
 
-    document.onload = function(){createChild(9)};
+    var load = function(){createChild(9)};
     
-    document.onload();
+    window.onload = load;
 
     var shuffleButton = document.querySelector("#shuffleButton");
     shuffleButton.addEventListener('click', function(){
